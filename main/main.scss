@@ -1,0 +1,137 @@
+
+$mainfloat:left;
+$maindisplay: none;
+$mainwidth: auto;
+$mainwidth-two: 100%;
+
+.main {
+	max-width: 100%;
+	position: relative;
+}
+.main-inner {padding: 30px 0;}
+
+.main-center {
+	max-width:100%;
+	margin-bottom: 30px;
+}
+
+.main-center__img {width: 140px;}
+
+.main-top {margin-bottom: 20px}
+
+.main-center-col-md-2 {padding: 0 10px;}
+
+.main-right {display: $maindisplay;}
+
+.main-left_hidden {display: $maindisplay;}
+
+.main-left_show {margin-bottom: 20px;}
+
+.main-left {
+	.main__img  {
+		display: block;
+		margin: auto;
+		width: $mainwidth-two;
+    	padding: 0 10px;
+	}
+}
+
+.main-center-col-md-2_indent {margin-bottom: 30px;}
+
+.col-eq {width: 100%;}
+
+@media(min-width: 320px) and ( max-width: 767px) {
+
+	.main-center-col-md-2_style {
+		height: 90px!important;
+		margin-bottom: 30px;
+	}
+}
+
+@media(min-width: 400px) {
+	.main-center__img {width: $mainwidth-two;}
+}
+
+@media(min-width: 768px) {
+
+	.main-center-col-md-2_indent {margin-bottom: 30px;}
+
+	.main-left_hidden {display: block;}
+
+	.main-left {
+		width: 27%;	/* width200px */
+		margin-bottom: 20px;
+		float: left;
+	}
+
+	.main-right {
+		width: 27%;
+		display: block;
+	}
+
+	.main-center-col-md-2 {padding: 0 8px;}
+
+	.main-center {
+		width: 73%;
+		float: right;
+		padding: 0 0 0 8px;
+		margin-bottom: 0;
+	}
+
+	.main__col-md-3 {width: 100%;}
+
+	.main-center__img {width: 166px;}
+
+	.main__img {width: 100%;}
+
+	.main-right__img {width: 100%;}
+
+	.main-left_show {
+		display: $maindisplay;
+		margin-bottom: 0;
+	}
+
+	.main-center-col-md-2_style {
+		height: auto;
+		margin-bottom: 0;
+	}
+	.main-left .main__img {padding: 0;}
+
+}
+
+@media(min-width: 1280px)  {
+	.main-center {
+		width: 59%;
+		padding: 0 19px;
+		margin-bottom: 0;
+		float: $mainfloat;;
+	}
+
+	.main-center-col-md-2 {
+		width: 25%;	
+		padding: 0 10px;
+	}
+
+	.main-left {
+		width: 22%;
+		float: $mainfloat;;
+	}
+
+	.main-right {
+		width: 19%;
+		float: left;
+	}
+
+	.main-right__img {width: $mainwidth;}
+
+	.main-center-col-md-2_indent {
+		margin-bottom: 0
+	}
+}
+
+
+
+
+
+
+

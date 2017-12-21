@@ -1,0 +1,16 @@
+$headerbg: #88a3d6;
+$headermax: 100%;
+$headerheight: 40px;
+$headerheightdes: 60px;
+
+.header {
+	background-color: $headerbg; 
+	max-width: $headermax;
+	height: $headerheight;
+}
+
+@media(min-width: 768px) {
+	.header {
+		height: $headerheightdes;
+	}
+}

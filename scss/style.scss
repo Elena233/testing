@@ -1,0 +1,20 @@
+@import '../header/header.scss';
+@import '../base/base.scss';
+@import '../main/main.scss';
+
+$bodybackground: #ffffff;
+$bodyfz: 16px;
+$bodywidth: 100%;
+$bodyheight:100%;
+$bodyposition: relative;
+$bodystyle: normal;
+
+
+.wrapper {
+	background-color: $bodybackground; 
+	font-size: $bodyfz;
+	position: $bodyposition;
+	width: $bodywidth;
+	height: $bodyheight;
+	font-style: $bodystyle;
+}
